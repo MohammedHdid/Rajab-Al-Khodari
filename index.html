@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>رجب الخضري — خبير التسويق الرقمي وتسويق الفعاليات</title>
+  <meta name="description" content="رجب الخضري — خبير متخصص في التسويق الرقمي وتسويق الفعاليات. ساعد علامتك التجارية على النمو وتحقيق نتائج حقيقية." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=Cairo:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <!-- Logo -->
+        <a href="#" class="nav-logo">
+          <span class="name">رجب الخضري</span>
+          <span class="title">خبير التسويق الرقمي وتسويق الفعاليات</span>
+        </a>
+
+        <!-- Desktop Links -->
+        <ul class="nav-links">
+          <li><a href="#about">من أنا</a></li>
+          <li><a href="#expertise">خدماتي</a></li>
+          <li><a href="#portfolio">أعمالي</a></li>
+          <li><a href="#testimonials">آراء العملاء</a></li>
+          <li><a href="#contact">تواصل</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <a href="https://wa.me/966500000000" target="_blank" class="btn btn-primary nav-cta">
+          <i class="fa-brands fa-whatsapp"></i>
+          تواصل الآن
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button class="nav-toggle" id="navToggle" aria-label="قائمة التنقل">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Overlay -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- Mobile Drawer -->
+  <nav class="nav-drawer" id="navDrawer">
+    <a href="#about"        onclick="closeNav()">من أنا</a>
+    <a href="#expertise"    onclick="closeNav()">خدماتي</a>
+    <a href="#portfolio"    onclick="closeNav()">أعمالي</a>
+    <a href="#testimonials" onclick="closeNav()">آراء العملاء</a>
+    <a href="#contact"      onclick="closeNav()">تواصل معي</a>
+    <a href="https://wa.me/966500000000" target="_blank" class="btn btn-primary" style="margin-top:1rem;justify-content:center;">
+      <i class="fa-brands fa-whatsapp"></i> تواصل الآن
+    </a>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <!-- Background image with overlay -->
+    <div class="hero-bg">
+      <img src="../pictures/Picture HERO.png" alt="رجب الخضري" />
+    </div>
+
+    <div class="hero-content container">
+      <div class="hero-inner">
+        <!-- Badge -->
+        <div class="hero-badge" data-animate data-delay="1">
+          <span class="dot"></span>
+          خبير التسويق الرقمي وتسويق الفعاليات
+        </div>
+
+        <!-- Title -->
+        <h1 class="hero-title" data-animate data-delay="2">
+          حوّل حضورك الرقمي
+          <span class="highlight gold-text">إلى نتائج حقيقية</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="hero-subtitle" data-animate data-delay="3">
+          أنا رجب الخضري — خبير متخصص في التسويق الرقمي وتسويق الفعاليات.
+          أساعدك على بناء هوية رقمية قوية تصل إلى جمهورك المثالي،
+          وتحوّل المتابعين إلى عملاء، وتجعل فعالياتك حديث المدينة.
+        </p>
+
+        <!-- Actions -->
+        <div class="hero-actions" data-animate data-delay="4">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i>
+            ابدأ معي الآن
+          </a>
+          <a href="#portfolio" class="btn btn-outline">
+            <i class="fa-solid fa-play"></i>
+            شاهد أعمالي
+          </a>
+        </div>
+
+        <!-- Stats -->
+        <div class="hero-stats" data-animate data-delay="5">
+          <div class="stat-item">
+            <span class="stat-number" data-count="200">0</span>
+            <span class="stat-label">عميل راضٍ</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="7">0</span>
+            <span class="stat-label">سنوات خبرة</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="150">0</span>
+            <span class="stat-label">فعالية ناجحة</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-count="40">0</span>
+            <span class="stat-label">علامة تجارية</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="hero-scroll-hint">
+      <span>اكتشف المزيد</span>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       ABOUT — معلومات عني
+  ═══════════════════════════════════════════ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <!-- Image Column -->
+        <div class="about-image-wrap" data-animate="left">
+          <div class="about-image-frame">
+            <img src="../pictures/Picture 1.png" alt="رجب الخضري" />
+          </div>
+
+          <!-- Floating badge -->
+          <div class="about-badge">
+            <div class="icon">🏆</div>
+            <div class="badge-text">
+              <strong>+7 سنوات</strong>
+              <span>خبرة في السوق</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text Column -->
+        <div class="about-text">
+          <span class="section-tag">
+            <i class="fa-solid fa-user-tie"></i>
+            معلومات عني
+          </span>
+
+          <h2 data-animate data-delay="1">
+            أصنع الفارق في
+            <span class="gold-text">عالم التسويق الرقمي</span>
+          </h2>
+
+          <p data-animate data-delay="2">
+            بدأت رحلتي في عالم التسويق منذ أكثر من سبع سنوات، وتخصصت في تقاطع التسويق الرقمي مع تسويق الفعاليات — وهو مجال نادر يجمع بين علم البيانات وفن التأثير.
+          </p>
+
+          <p data-animate data-delay="3">
+            عملت مع علامات تجارية كبرى وشركات ناشئة عبر منطقة الشرق الأوسط وشمال أفريقيا، وساعدتها على تضخيم حضورها الرقمي قبل الفعاليات وأثناءها وبعدها، وتحقيق نتائج قابلة للقياس.
+          </p>
+
+          <p data-animate data-delay="3">
+            أؤمن أن التسويق الناجح لا يُبنى على الجماليات وحدها، بل على استراتيجية واضحة، وفهم عميق للجمهور، وتحليل دقيق للبيانات.
+          </p>
+
+          <!-- Highlights -->
+          <div class="about-highlights" data-animate data-delay="4">
+            <div class="highlight-item">
+              <span class="check"><i class="fa-solid fa-check"></i></span>
+              استراتيجيات تسويق مخصصة
+            </div>
+            <div class="highlight-item">
+              <span class="check"><i class="fa-solid fa-check"></i></span>
+              تسويق الفعاليات من ألفها إلى يائها
+            </div>
+            <div class="highlight-item">
+              <span class="check"><i class="fa-solid fa-check"></i></span>
+              إدارة وإنتاج محتوى رقمي
+            </div>
+            <div class="highlight-item">
+              <span class="check"><i class="fa-solid fa-check"></i></span>
+              حملات إعلانية بعائد استثمار مرتفع
+            </div>
+            <div class="highlight-item">
+              <span class="check"><i class="fa-solid fa-check"></i></span>
+              بناء الهوية الرقمية للعلامات التجارية
+            </div>
+            <div class="highlight-item">
+              <span class="check"><i class="fa-solid fa-check"></i></span>
+              تحليل وقراءة بيانات الأداء
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       EXPERTISE — خبراتي
+  ═══════════════════════════════════════════ -->
+  <section class="expertise" id="expertise">
+    <div class="container">
+
+      <div class="section-header" data-animate>
+        <span class="section-tag">
+          <i class="fa-solid fa-star"></i>
+          خبراتي وخدماتي
+        </span>
+        <h2>كيف أستطيع <span class="gold-text">مساعدتك؟</span></h2>
+        <p>أقدم حلولاً تسويقية متكاملة مصممة خصيصاً لتحقيق أهدافك التجارية وتضخيم حضورك في السوق الرقمي</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card" data-animate data-delay="1">
+          <div class="service-icon">📈</div>
+          <h3>التسويق الرقمي الاستراتيجي</h3>
+          <p>خطط تسويقية متكاملة مبنية على بيانات حقيقية وتحليل دقيق للسوق، تضمن وصولك إلى جمهورك المثالي بأقل تكلفة وأعلى عائد.</p>
+        </div>
+
+        <div class="service-card" data-animate data-delay="2">
+          <div class="service-icon">🎪</div>
+          <h3>تسويق الفعاليات</h3>
+          <p>من المؤتمرات والمعارض إلى حفلات التدشين والأمسيات الخاصة — أضمن لك حضوراً رقمياً يصنع ضجة قبل الفعالية وأثناءها وبعدها.</p>
+        </div>
+
+        <div class="service-card" data-animate data-delay="3">
+          <div class="service-icon">📱</div>
+          <h3>إدارة السوشال ميديا</h3>
+          <p>تحرير وجدولة ونشر محتوى منسجم يعكس هوية علامتك التجارية ويبني مجتمعاً متفاعلاً حقيقياً لا أرقاماً وهمية.</p>
+        </div>
+
+        <div class="service-card" data-animate data-delay="4">
+          <div class="service-icon">🎯</div>
+          <h3>الإعلانات المدفوعة</h3>
+          <p>حملات إعلانية مدروسة على Meta وGoogle وSnapchat وTikTok، مُحسَّنة باستمرار لتحقيق أعلى عائد على الاستثمار لكل ريال تنفقه.</p>
+        </div>
+
+        <div class="service-card" data-animate data-delay="5">
+          <div class="service-icon">✨</div>
+          <h3>بناء الهوية الرقمية</h3>
+          <p>نبني لك هوية رقمية متسقة عبر جميع المنصات — من الشعار والألوان إلى لغة التواصل وأسلوب المحتوى — تجعل علامتك لا تُنسى.</p>
+        </div>
+
+        <div class="service-card" data-animate data-delay="6">
+          <div class="service-icon">📊</div>
+          <h3>تحليل البيانات والأداء</h3>
+          <p>تقارير دورية شاملة مع توصيات قابلة للتنفيذ، تفهم من خلالها بالضبط ما يعمل وما يحتاج تحسيناً في استراتيجيتك التسويقية.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       PORTFOLIO — أعمالي
+  ═══════════════════════════════════════════ -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+
+      <div class="section-header" data-animate>
+        <span class="section-tag">
+          <i class="fa-solid fa-briefcase"></i>
+          أعمالي
+        </span>
+        <h2>نماذج من <span class="gold-text">مشاريعنا</span></h2>
+        <p>أعمال حقيقية، نتائج قابلة للقياس — شاهد كيف حوّلنا أهداف عملائنا إلى واقع ملموس</p>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <div class="portfolio-item" data-animate data-delay="1">
+          <img src="../pictures/Pictures 2.png" alt="مشروع تسويقي" />
+          <div class="portfolio-overlay">
+            <span class="tag">تسويق الفعاليات</span>
+            <h3>حملة تدشين منتج فاخر</h3>
+            <p>زيادة الوعي بالعلامة التجارية بنسبة 340% خلال 30 يوم من الحملة</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-animate data-delay="2">
+          <img src="../pictures/Pictures 3.png" alt="مشروع تسويقي" />
+          <div class="portfolio-overlay">
+            <span class="tag">السوشال ميديا</span>
+            <h3>نمو متسارع لعلامة تجارية ناشئة</h3>
+            <p>من 0 إلى 50,000 متابع متفاعل في 4 أشهر بمحتوى استراتيجي هادف</p>
+          </div>
+        </div>
+
+        <div class="portfolio-item" data-animate data-delay="3">
+          <img src="../pictures/Picture 1.png" alt="جلسة استشارية" />
+          <div class="portfolio-overlay">
+            <span class="tag">الإعلانات المدفوعة</span>
+            <h3>حملة إعلانية عالية الأداء</h3>
+            <p>تحقيق ROAS 8x على حملات Meta مع خفض تكلفة الاكتساب بنسبة 60%</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       TESTIMONIALS — آراء العملاء
+  ═══════════════════════════════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+
+      <div class="section-header" data-animate>
+        <span class="section-tag">
+          <i class="fa-solid fa-heart"></i>
+          آراء العملاء
+        </span>
+        <h2>ماذا قال عنّي <span class="gold-text">عملاؤنا؟</span></h2>
+        <p>نتائج حقيقية وكلمات صادقة من عملاء وثقوا بي في مسيرتهم التسويقية</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card" data-animate data-delay="1">
+          <div class="stars">★★★★★</div>
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">
+            كنت أبحث عن شخص يفهم طبيعة الفعاليات والتسويق الرقمي في آنٍ واحد، فوجدت في رجب ما لم أتوقعه.
+            حملة التدشين التي صممها لمعرضنا السنوي حققت أكثر من ضعف العدد المستهدف من الحضور، والتغطية الرقمية كانت استثنائية.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👔</div>
+            <div class="author-info">
+              <strong>فهد العتيبي</strong>
+              <span>مدير تنفيذي — شركة إبداع للفعاليات، الرياض</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card" data-animate data-delay="2">
+          <div class="stars">★★★★★</div>
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">
+            علامتي التجارية كانت في حالة ركود رقمي تام. بعد ثلاثة أشهر مع رجب، ارتفع معدل التفاعل على إنستغرام 5 أضعاف،
+            وأصبح لدينا محتوى يعكس هويتنا فعلاً ويجذب العملاء الصحيحين بشكل عضوي. التغيير كان جذرياً.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">👩‍💼</div>
+            <div class="author-info">
+              <strong>نور العمري</strong>
+              <span>مؤسسة علامة تجارية للعناية بالبشرة، جدة</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card" data-animate data-delay="3">
+          <div class="stars">★★★★★</div>
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">
+            أنفقنا آلاف الريالات على إعلانات لم تجلب أي نتيجة. رجب أعاد هيكلة حملاتنا بالكامل، وخلال أسبوعين
+            بدأنا نرى عائداً حقيقياً وتحويلات فعلية. شرحه للأرقام والتقارير واضح وعملي جداً.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🧑‍💻</div>
+            <div class="author-info">
+              <strong>عبدالله السالم</strong>
+              <span>مؤسس شركة تقنية ناشئة، الدمام</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 4 -->
+        <div class="testimonial-card" data-animate data-delay="4">
+          <div class="stars">★★★★★</div>
+          <div class="quote-icon">"</div>
+          <p class="testimonial-text">
+            ما يميز رجب عن غيره هو أنه لا يبيع لك وهماً. يأتي بخطة واضحة ومؤشرات قابلة للقياس ويلتزم بها.
+            نجح في الترويج لمؤتمرنا الإقليمي ووصلنا لشرائح لم نكن نتوقع الوصول إليها.
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🎤</div>
+            <div class="author-info">
+              <strong>سارة الزهراني</strong>
+              <span>منظِّمة مؤتمرات ومدربة معتمدة، دبي</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       CONTACT + SOCIAL — التواصل
+  ═══════════════════════════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <!-- Contact Info -->
+        <div class="contact-info" data-animate="left">
+          <span class="section-tag">
+            <i class="fa-solid fa-envelope"></i>
+            معلومات التواصل
+          </span>
+
+          <h2>تواصل معي <span class="gold-text">مباشرة</span></h2>
+
+          <p>سواء كنت تبحث عن استشارة تسويقية، شراكة في فعالية قادمة، أو تريد الترقي بحضورك الرقمي — أنا هنا للإجابة على كل تساؤلاتك.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="icon-wrap">📞</div>
+              <div class="info">
+                <strong>الهاتف</strong>
+                <a href="tel:+966500000000">+966 50 000 0000</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-wrap">✉️</div>
+              <div class="info">
+                <strong>البريد الإلكتروني</strong>
+                <a href="mailto:rajab@example.com">rajab@example.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-wrap">📍</div>
+              <div class="info">
+                <strong>الموقع</strong>
+                <span>المملكة العربية السعودية — متاح للعمل عن بُعد</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="icon-wrap">🕐</div>
+              <div class="info">
+                <strong>أوقات العمل</strong>
+                <span>الأحد – الخميس، 9 صباحاً – 6 مساءً</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Media -->
+        <div class="social-section" data-animate="right">
+          <h3>
+            <i class="fa-solid fa-share-nodes" style="color:var(--gold);margin-left:0.4rem;"></i>
+            حسابات السوشال ميديا
+          </h3>
+
+          <div class="social-grid">
+            <a href="https://instagram.com" target="_blank" class="social-card instagram">
+              <div class="social-icon instagram">
+                <i class="fa-brands fa-instagram" style="color:#fff;"></i>
+              </div>
+              <div>
+                <div class="label">إنستغرام</div>
+                <div class="handle">@rajab.khodari</div>
+              </div>
+            </a>
+
+            <a href="https://linkedin.com" target="_blank" class="social-card linkedin">
+              <div class="social-icon linkedin">
+                <i class="fa-brands fa-linkedin-in" style="color:#fff;"></i>
+              </div>
+              <div>
+                <div class="label">لينكد إن</div>
+                <div class="handle">رجب الخضري</div>
+              </div>
+            </a>
+
+            <a href="https://twitter.com" target="_blank" class="social-card twitter">
+              <div class="social-icon twitter">
+                <i class="fa-brands fa-x-twitter" style="color:#fff;"></i>
+              </div>
+              <div>
+                <div class="label">تويتر / X</div>
+                <div class="handle">@rajab_khodari</div>
+              </div>
+            </a>
+
+            <a href="https://tiktok.com" target="_blank" class="social-card tiktok">
+              <div class="social-icon tiktok">
+                <i class="fa-brands fa-tiktok" style="color:#fff;"></i>
+              </div>
+              <div>
+                <div class="label">تيك توك</div>
+                <div class="handle">@rajab.khodari</div>
+              </div>
+            </a>
+
+            <a href="https://youtube.com" target="_blank" class="social-card youtube">
+              <div class="social-icon youtube">
+                <i class="fa-brands fa-youtube" style="color:#fff;"></i>
+              </div>
+              <div>
+                <div class="label">يوتيوب</div>
+                <div class="handle">رجب الخضري</div>
+              </div>
+            </a>
+
+            <a href="https://wa.me/966500000000" target="_blank" class="social-card whatsapp">
+              <div class="social-icon whatsapp">
+                <i class="fa-brands fa-whatsapp" style="color:#fff;"></i>
+              </div>
+              <div>
+                <div class="label">واتساب</div>
+                <div class="handle">تواصل مباشر</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="cta-banner" data-animate>
+        <h2>جاهز تبدأ رحلتك التسويقية؟</h2>
+        <p>احجز استشارتك المجانية الآن وخلينا نبني معاً استراتيجية تناسب أهدافك تحديداً</p>
+        <div class="btn-group">
+          <a href="https://wa.me/966500000000" target="_blank" class="btn btn-primary">
+            <i class="fa-brands fa-whatsapp"></i>
+            تواصل عبر واتساب
+          </a>
+          <a href="mailto:rajab@example.com" class="btn btn-outline">
+            <i class="fa-solid fa-envelope"></i>
+            أرسل بريداً إلكترونياً
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="name">رجب الخضري</span>
+        </div>
+        <p class="footer-copy">© 2025 جميع الحقوق محفوظة</p>
+        <p class="footer-tagline">حوّل حضورك الرقمي إلى نتائج حقيقية</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       FLOATING WHATSAPP
+  ═══════════════════════════════════════════ -->
+  <a href="https://wa.me/966500000000" target="_blank" class="float-whatsapp" aria-label="واتساب">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Script -->
+  <script src="main.js"></script>
+</body>
+</html>
