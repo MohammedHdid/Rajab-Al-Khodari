@@ -60,6 +60,7 @@
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -527,20 +528,15 @@ ul { list-style: none; }
   pointer-events: none;
 }
 
-/* Decorative offset card */
+/* Decorative offset card — removed on mobile to avoid overflow */
 .about-image-wrap::before {
-  content: '';
-  position: absolute;
-  inset: -12px;
-  border: 1px dashed rgba(212,168,67,0.18);
-  border-radius: calc(var(--radius-lg) + 12px);
-  z-index: 0;
+  content: none;
 }
 
 .about-badge {
   position: absolute;
   bottom: 1.5rem;
-  right: -1rem;
+  right: 1rem;
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
@@ -796,6 +792,10 @@ ul { list-style: none; }
   padding-block: var(--section-py);
   background: var(--bg-secondary);
   position: relative;
+  overflow: hidden;
+}
+
+.contact {
   overflow: hidden;
 }
 
